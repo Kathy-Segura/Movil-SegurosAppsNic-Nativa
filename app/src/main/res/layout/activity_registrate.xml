@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrate">
+
+    <!-- Centrado de todos los elementos con linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Imagen centrada -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="157dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/pen" />
+
+        <!-- EditText de Usuario -->
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Usuario"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <!-- EditText de Email -->
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Correo"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <!-- EditText de Contraseña con icono de ojo para revelar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/eye_icon_password1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/hide" />
+        </RelativeLayout>
+
+        <!-- EditText de Confirmar Contraseña con icono de ojo para revelar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Confirmar Contraseña"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/eye_icon_password2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/hide" />
+        </RelativeLayout>
+
+        <!-- CheckBox para términos y condiciones -->
+
+        <!-- Botón de registro centrado -->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:buttonTint="#360485"
+            android:text="Aceptar términos y condiciones"
+            android:textColor="#240771" />
+
+        <!-- TextView de Sign in centrado -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:backgroundTint="@color/lila2"
+            android:text="Crear Cuenta" />
+
+        <TextView
+            android:id="@+id/btnregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Iniciar Sesión"
+            android:textColor="#0E15A0"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

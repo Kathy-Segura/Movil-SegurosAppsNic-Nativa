@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.menulateral.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.menulateral.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.menulateral.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/grafico"
+        android:name="com.example.menulateral.Grafico"
+        android:label="fragment_grafico"
+        tools:layout="@layout/fragment_grafico" />
+    <fragment
+        android:id="@+id/reportes"
+        android:name="com.example.menulateral.Reportes"
+        android:label="fragment_reportes"
+        tools:layout="@layout/fragment_reportes" />
+    <fragment
+        android:id="@+id/barChart"
+        android:name="com.example.menulateral.ui.BarChartFragment"
+        android:label="Agentes con > Comisión"
+        tools:layout="@layout/fragment_barchart" />
+
+    <fragment
+        android:id="@+id/lineChart"
+        android:name="com.example.menulateral.ui.LinChartFragment"
+        android:label="Ventas Totales por Pólizas"
+        tools:layout="@layout/fragment_linechart" />
+
+    <fragment
+        android:id="@+id/columnChart"
+        android:name="com.example.menulateral.ui.ColumChartFragment"
+        android:label="Clientes con mayor % Compra"
+        tools:layout="@layout/fragment_columchart" />
+
+    <fragment
+        android:id="@+id/areaChart"
+        android:name="com.example.menulateral.ui.AreChartFragment"
+        android:label="Ventas Mensuales Totales"
+        tools:layout="@layout/fragment_areachart" />
+
+    <fragment
+        android:id="@+id/pieChart"
+        android:name="com.example.menulateral.ui.PiChartFragment"
+        android:label="Ventas Totales por Agente"
+        tools:layout="@layout/fragment_piechart" />
+
+</navigation>
